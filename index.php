@@ -22,32 +22,37 @@
     <title>Sistema de Ponto em PHP</title>
 </head>
 <body>
-    <h2>Registrar Ponto</h2>
-
-    <?php 
-    
-    if (isset($_SESSION['msg'])) {
-        echo $_SESSION['msg'];
-        unset($_SESSION['msg']);
-    }
-
-    if (isset($_POST['senha'])){
-        if (strlen($_POST['senha']) == 0) {
-            echo "<p style='color:#f00;'>Preencha a sua senha!<p>";
-        } else {
-            $senha = pg_escape_string($_POST['senha']);
-            registrar($senha);
-        }
-    }
-
-    ?>
-
-    <form method="post">
-        <label for="senha">Senha:</label>
-        <input type="password" name="senha" id="senha">
-        <p id="horario"><?php echo date("d/m/Y H:i:s"); ?></p>
-        <button type="submit">Registrar</button>
-    </form>
+    <div class="container">
+        <div class="bola um"></div>
+        <div class="bola dois"></div>
+        <div class="bola tres"></div>
+        <div class="card">
+            <h2>Registrar Ponto</h2>
+            <?php
+            
+            if (isset($_SESSION['msg'])) {
+                echo $_SESSION['msg'];
+                unset($_SESSION['msg']);
+            }
+            if (isset($_POST['senha'])){
+                if (strlen($_POST['senha']) == 0) {
+                    echo "<p class='erro'>Preencha a sua senha!<p>";
+                } else {
+                    $senha = pg_escape_string($_POST['senha']);
+                    registrar($senha);
+                }
+            }
+            ?>
+            <form method="post">
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+                <p id="horario"><?php echo date("d/m/Y H:i:s"); ?></p>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+        <div class="bola quatro"></div>
+        <div class="bola cinco"></div>
+        <div class="bola seis"></div>
+    </div>
 
 </body>
 </html>

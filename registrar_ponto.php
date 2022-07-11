@@ -129,10 +129,10 @@
 
         // Acessa o IF quando cadastrar com sucesso
         if($cad_horario->rowCount()){
-            $_SESSION['msg'] =  "<p style='color:green;'>Horario de $text_tipo_registro cadastrado com sucesso!<p>";
+            $_SESSION['msg'] =  "<p class='sucesso'>Horario de $text_tipo_registro cadastrado com sucesso!<p>";
             header("Location: index.php");
         } else {
-            $_SESSION['msg'] =  "<p style='color:#f00;'>Horario de $text_tipo_registro não cadastrado com sucesso!<p>";
+            $_SESSION['msg'] =  "<p class='erro'>Horario de $text_tipo_registro não cadastrado com sucesso!<p>";
             header("Location: index.php");
         }
         
