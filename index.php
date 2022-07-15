@@ -24,6 +24,7 @@
 <body>
     <div class="container">
         <div class="bola um"></div>
+        <div class="um-dois"></div>
         <div class="bola dois"></div>
         <div class="bola tres"></div>
         <div class="card">
@@ -51,6 +52,7 @@
         </div>
         <div class="bola quatro"></div>
         <div class="bola cinco"></div>
+        <div class="seis-dois"></div>
         <div class="bola seis"></div>
     </div>
 

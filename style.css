@@ -85,6 +85,7 @@ body {
 
 h2 {
     color: white;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
 }
 
 form {
@@ -186,5 +187,39 @@ button:hover {
         height: 15vw;
         left: 0px;
         bottom: -35px;
+    }
+}
+
+@media only screen and (max-width: 635px){
+    .um-dois {
+        background-color: #f9526c;
+        border-radius: 100%;
+        position: absolute;
+        width: 30vw;
+        height: 30vw;
+        right: 160px;
+        top: -35px;
+    }
+    .dois {
+        width: 25vw;
+        height: 25vw;
+        right: 50px;
+        top: -45px;
+    }
+
+    .seis-dois {
+        background-color: #f9526c;
+        border-radius: 100%;
+        position: absolute;
+        width: 30vw;
+        height: 30vw;
+        left: 160px;
+        bottom: -35px;
+    }
+    .cinco {
+        width: 25vw;
+        height: 25vw;
+        left: 50px;
+        bottom: -45px;
     }
 }
